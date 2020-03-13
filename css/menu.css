@@ -33,7 +33,6 @@ a:hover { color: white; }
 #example-one a:hover {
 	background-blend-mode: overlay;
 	border-radius: 30px;
-	background-color: rgba(196, 196, 196, 0.3);
 	color: white;
   transform: scale(1.1);
 }
