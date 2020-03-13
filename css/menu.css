@@ -14,7 +14,7 @@
   width: 50vmax;
   z-index: -1;
   animation: move 170s ease-in-out infinite;
-  transform-origin: 0% 0%;
+  transform-origin: 30% 30%;
 	float:right;
 }
 
