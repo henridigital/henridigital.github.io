@@ -6589,7 +6589,6 @@ label.panel-block {
   .hero .tabs ul {
     border-bottom: none; }
     .hero.is-white {
-      color: black;
       background: linear-gradient(270deg, #ff8181, #ffdb81);
   background-size: 400% 400%;
 
