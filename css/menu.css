@@ -10,7 +10,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  fill: rgba(249,98,104)
+  fill: #f96268;
+	fill-opacity: 0.7;
   width: 50vmax;
   z-index: -1;
   animation: move 170s ease-in-out infinite;
