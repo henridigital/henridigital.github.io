@@ -6588,9 +6588,30 @@ label.panel-block {
     background: none; }
   .hero .tabs ul {
     border-bottom: none; }
-  .hero.is-white {
-    background-color: white;
-    color: #0a0a0a; }
+    .hero.is-white {
+      color: black;
+      background: linear-gradient(270deg, #ff8181, #ffdb81);
+  background-size: 400% 400%;
+
+  -webkit-animation: mygradient 9s ease infinite;
+  -moz-animation: mygradient 9s ease infinite;
+  animation: mygradient 9s ease infinite;}
+
+  @-webkit-keyframes mygradient {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @-moz-keyframes mygradient {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
+  @keyframes mygradient {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+  }
     .hero.is-white a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
     .hero.is-white strong {
       color: inherit; }
