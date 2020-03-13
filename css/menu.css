@@ -1,8 +1,5 @@
 
 
-a { color: #eee; }
-a:hover { color: white; }
-
 .nav-wrap {
 	margin-top: 50px;
 }
@@ -30,18 +27,21 @@ a:hover { color: white; }
   transition: all .3s ease-in-out;
 
 }
+
 #example-one a:hover {
 	background-blend-mode: overlay;
 	border-radius: 30px;
+
 	color: white;
   transform: scale(1.1);
 }
+
 #magic-line {
 	position: absolute;
 	bottom: -5px;
 	left: 0;
 	width: 100px;
-	height: 6px;
+	height: 3px;
 	background: White;
 .current_page_item a {
   transform: scale(1.1);
