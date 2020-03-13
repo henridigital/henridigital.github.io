@@ -1,1 +1,130 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My custom Bulma website</title>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/homepage.css">
+  </head>
+  <body>
+    <section class="hero is-white is-large is-flex">
+      <nav class="nav-wrap">
+      <ul class="group" id="example-one">
+        <li class="current_page_item"><a href="#">Home</a></li>
+        <li><a href="#">Buy Tickets</a></li>
+        <li><a href="#">Group Sales</a></li>
+      </ul>
+      </nav>
+
+      <div class="hero-body">
+        <div class="container">
+        </div>
+      </div>
+    </section>
+<br>
+    <section class="section">
+   <div class="container has-text-centered">
+     <h1 class="title">Section</h1>
+     <h2 class="subtitle">
+       A simple container to divide your page into <strong>sections</strong>, like the one you're currently reading
+     </h2>
+   </div>
+ </section>
+<section class="section">
+  <div class="container">
+    <div class="columns is-vcentered is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
+    <div class="column">
+      <div class="red has-background-white"><img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3107&q=80" alt=""></div>
+    </div>
+    <div class="column is-one-third">
+      <div class="red has-background-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-vcentered is-variable is-1-mobile is-0-tablet is-3-desktop is-8-widescreen is-2-fullhd">
+      <div class="column is-three-fifths">
+      <p class="bd-notification is-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <br> <br>
+      <div class="columns is-vcentered is-gapless">
+        <div class="column">
+          <img src="https://images.unsplash.com/photo-1583964959152-fe9612f86156?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2801&q=80" width="220"  height"220" alt="">
+        </div>
+        <div class="column">
+          <img src="https://images.unsplash.com/photo-1583813939202-6acb4d402e22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1598&q=80" width="220" height"340" alt="">
+        </div>
+        <div class="column">
+          <img src="https://images.unsplash.com/photo-1583994581863-3137a9976f34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3034&q=80" width="220" height"220" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="red has-background-white"><img src="https://images.unsplash.com/photo-1534670007418-fbb7f6cf32c3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" width="500" alt=""></div>
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+
+
+
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+  var $el, leftPos, newWidth;
+  $mainNav2 = $("#example-two");
+
+  /*
+        EXAMPLE ONE
+    */
+
+  /* Add Magic Line markup via JavaScript, because it ain't gonna work without */
+  $("#example-one").append("<li id='magic-line'></li>");
+
+  /* Cache it */
+  var $magicLine = $("#magic-line");
+
+  $magicLine
+  .width($(".current_page_item").width())
+  .css("left", $(".current_page_item a").position().left)
+  .data("origLeft", $magicLine.position().left)
+  .data("origWidth", $magicLine.width());
+
+  $("#example-one li")
+  .find("a")
+  .hover(
+    function() {
+      $el = $(this);
+      leftPos = $el.position().left;
+      newWidth = $el.parent().width();
+
+      $magicLine.stop().animate({
+        left: leftPos,
+        width: newWidth
+      });
+    },
+    function() {
+      $magicLine.stop().animate({
+        left: $magicLine.data("origLeft"),
+        width: $magicLine.data("origWidth")
+      });
+    }
+  );
+
+  </script>
+
+</html>
