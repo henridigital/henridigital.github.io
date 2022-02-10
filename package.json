@@ -12,7 +12,7 @@
   "license": "MIT",
   "devDependencies": {
     "bulma": "^0.8.0",
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   },
   "dependencies": {
     "kute.js": "^1.6.6"
